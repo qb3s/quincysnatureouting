@@ -1,0 +1,392 @@
+ <!-- Welcome to My Nature Outing, where you'll use code to process and share your experiences with others. While you are making your visit to nature, gather pictures, sounds, and words you'll use in this document. 
+
+To get started making this document, you'll need to download the code from GitHub. If you want to easily publish your Nature Study on GitHub, I'll give you more information at the end of this document. But for right now, download code to a zip file. Go ahead and put these files in a secure folder where you'll be able to find them and organize assets like images, pdfs, etcetera. You'll also need a text editor like "brackets.io", "atom.io", or "notepad-plus-plus.org." Open the style.css and index.html documents in the text editor and we can get started building our own Nature Communication.--> 
+
+<!--BTW. You can leave these hidden HTML code comments be, or delete them.-->
+
+<!--First, we'll need to do some work in the head of the document. The head organizes important information needed to explain to browsers how the website works. You can keep the title of this HTML document, "My Nature Outing," or change it to whatever you want to call it. Your new text will appear in your browser tab-->
+
+<!DOCTYPE html>
+<html lang="en">   
+<head>
+  <title>My Nature Outing</title>
+    
+    <!--this next section of code does important work to help different browsers understand what this page should look like on the different kinds of screens.--> 
+    
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <!--this code tells the browser to link to the style.css file that controls the appearance of much of your content.--> 
+    <link rel="stylesheet" type="text/css" href="style.css">
+    
+    <!--and this code links to third party style sheets like bootstrap.--> 
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js">  </script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js">  </script>
+    
+</head>
+    
+    <!--The body of the document houses the content that a user usually sees on a website. We'll be spending most of our time in this section.-->
+<body>
+    
+    
+    <!-- Developers refer to this division as a "Hero Block." Think carefully about the image you select and how it might serve a symbolic function in your nature study. Place a .jpg or .png in the same file folder as this project (hint: simplify the name to one word). You don't need to do anything on this html page, but you'll need to change the background image name on the style.css page to match your image asset. Next, change the other relevant information in this section."--> 
+
+<div class="hero-image">
+  <div class="hero-text">
+          <p style="font-size:25px;">Presented by Frick Park</p><!--You can delete this line-->
+      <h1 style="font-size:70px;">Quincy's Nature Outing</h1>
+    <p style="font-size:25px;">by Quincy Sauter</p>
+  </div>
+</div>
+
+
+   <!--We'll begin by thinking about the mode of seeing and the medium of photography. Seeing is just one way we come to understand our world. And when we use tools for seeing, like telescopes and microscopes, we can sometimes see an object differently from how we might otherwise. Sometimes we can bring the object closer, sometimes we can better frame the object, and sometimes we can bring different elements into focus. In this exercise we are going to think about how we can frame not the whole of the tree, but the branch, not the boulder, but the moss on its northern-most side. We might be in a big place, but we can use the lens to direct our attention to something smaller. So what are the parts that make up the whole of this system?-->
+
+  <!--In this exercise we'll need to place our image assets in the project folder making sure each image is a .jpg or .png. Link the img src=to your image in your project folder. Then you'll need to scroll down to the corresponding modals at the bottom of this document to add the image there as well. The modal will pop-up when the audience activates the link. Finally, be sure to add an alt= description for visually impaired audiences-->
+    
+<div class="container-fluid bg-w">    
+    <h1>Photography</h1><br>
+    <p><em>All of the images in this section were took within Frick Park in Pittsburgh, Pennsylvania</em></p>
+  <div class="row">
+    <div class="col-sm-4">
+          <a class="portfolio-link" data-toggle="modal" href="#portfolioModal1">
+         <div class="hover">
+       <img src="BeeOnYellowFlower.jpg" class="img-responsive" style="width:100%"alt="Describe Image Here" >     
+              </div>
+     </a>
+      
+    </div>
+       <div class="col-sm-4">
+          <a class="portfolio-link" data-toggle="modal" href="#portfolioModal2">
+         <div class="hover">
+       <img src="MossPlants.jpg" class="img-responsive" style="width:100%"alt="Describe Image Here" >     
+              </div>
+     </a>
+       
+    </div>
+    <div class="col-sm-4">
+          <a class="portfolio-link" data-toggle="modal" href="#portfolioModal3">
+         <div class="hover">
+       <img src="BeeOnPurpleFlower.jpg" class="img-responsive" style="width:100%"alt="Describe Image Here" >     
+              </div>
+     </a>
+      
+    </div>
+      
+  </div>
+</div>
+        
+   
+    <!--What did you learn about nature during this study? What did you learn about photography? Why present these images and not others?-->
+
+    
+    <div class="container-textcenter">    
+ <h3 class="margin">Notes on Images</h3>
+        <br>
+
+    <div class="row"> 
+    <div class="col-sm">
+  <p>The photo on the far left is of a bright yellow flower called a jerusalem artichoke flower. They are also called Helianthus tuberosus, sunchokes, or just a wild sunflower. It is native to North America. The image in the center is some type of moss on the ground also mixed with dead leaves and other plantlife. The third image is of a purple flower called bee balm. Another name for it is Monarda. It is part of the mint family and is found in eastern North America.
+</p>
+        </div>
+      
+    </div>
+    </div>
+    
+ 
+    
+         <!--It's time to switch to a different mode, to that of listening. Let's think about sounds we might be able to capture in our nature study. This could be wind blowing, birds chirping, footsteps trudging, water rolling...what do you hear that you can share with your audience. Often audio gets recorded as .wav files and it's then converted into mp4s which are much smaller and lower quality, but easier to embed in websites. Place the files in the music folder and label them to match your code.-->
+   
+<!div class="container-fluid bg-b text-center">
+            
+  <!h1><!Nature <!Sounds</h1><br>
+    <!p><em><!Share the sounds of nature</em></p>
+
+  <!div class="row">
+    <!div class="col-sm-4">
+        <!h3><!Title</h3>
+         <!audio controls>
+  <!source src="nature.mp3" type="audio/mpeg">
+<!/audio> 
+        <!br>
+          <!p><!Lorem ipsum dolor sit amet, consectetur <!adipisicing elit, sed do eiusmod tempor <!incididunt ut labore et dolore magna aliqua.<!/p>
+              <!/div>
+    
+            <!div class="col-sm-4">
+        <!h3><!Title</h3>
+         <!audio controls>
+  <!source src="nature.mp3" type="audio/mpeg">
+
+</audio> 
+                <!br>
+          <!p><!Lorem ipsum dolor sit amet, consectetur <!adipisicing elit, sed do eiusmod tempor <!incididunt ut labore et dolore magna aliqua.<!/p>
+              <!/div>
+          <!div class="col-sm-4">
+        <!h3><!Title</h3>
+         <!audio controls>
+  <!source src="nature.mp3" type="audio/mpeg">
+<!/audio> 
+              <!br>
+          <!p><!Lorem ipsum dolor sit amet, consectetur <!adipisicing elit, sed do eiusmod tempor <!incididunt ut labore et dolore magna aliqua.<!/p>
+              <!/div>
+    <!/div>
+    <!/div>
+    
+    
+   
+<!div>
+<!img src="img4.jpg" alt="describe the image HERE for accessibility purposes" style="width:100%;">
+<!/div>
+
+
+      
+    
+ <!--In this section we'll gather words using a word bank. Writers often employ this technique before they start writing. Let's begin by collecting names of trees, plants, insects, flowers, birds, and other animals we see, along with sounds and smells, and touches. What other words have you discovered?-->
+    
+       <div class="container-fluid bg-b">    
+     <h1 class="margin">Word Collections</h1>
+           <p><em>Vocabulary of the Outing</em></p>
+           
+    <!--Fill this word box with names of trees, plants, animals, smells, sounds, actions-->
+    
+        <div class="row">
+             <div class="col-sm-6">
+       <div class="box">
+            *jerusalem artichoke * bee balm * bumble bee * butterfly * cicada * moss * trees * 
+           </div>
+            </div>
+            
+          <div class="col-sm-6">
+    <p>During this time in summer Frick Park is filled with many, many, things. While walking you are sure to hear the call of cicadas and birds. The sound of the wind in the leaves can be heard throughout the whole park. You will be able to see many chipmunks, squirrels,insects, birds, and even sometimes deer!</p>
+              
+            </div>
+        </div>
+           
+    </div>
+
+           
+     <!--Audio interview another person - this activity is a great way for you to connect with others. Prepare a list of questions to ask your interviewee, but feel free to go off script. Why is this space important to this individual? What did they learn during their visit? Do they want to spend more time in the woods? Etc.-->
+    
+    <!-- <div class="container-fluid bg-w text-center">    
+  <h1>My Nature Outing Podcast</h1><br>
+         <p><em>Interview another student about their experiences and learning</em></p>
+         
+  <div class="row">
+      <div class="col-sm-6">
+    <img src="img5.jpg" class="img-responsive" style="width:100%"alt="Describe Image Here" >       </div>
+    <div class="col-sm-6">
+         <h3>Title</h3>
+         <audio controls>
+  <source src="horse.mp3" type="audio/mpeg">
+Your browser does not support the audio element.
+</audio>     
+              </div>
+              
+        </div>
+        
+        <div class="col-sm-6">
+        <h3>About my interview?</h3>
+        <p>Who did you interview and what will you talk about? Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+    </div>
+        
+    </div>-->
+
+   
+    
+
+    
+    <!--<div class="container-fluid bg-b text-center" >  
+ <img src="img6.jpg" class="center-large-image" alt="Gathering Herbs in a Finnish Field" style="max-width:25%;max-height:25%;">
+ -->
+    
+    <div class="container-fluid bg-b text-center" >  
+ <img src="img6.jpg" class="center-large-image"
+  <p><em>Thank you for reading!</em></p>   </div>
+
+<br>
+<br>
+    
+    <!-- Stops video/audio from playing on modal close -->
+    <script>
+         $(function(){
+    $("body").on('hidden.bs.modal', function (e) {
+    var $iframes = $(e.target).find("iframe");
+    $iframes.each(function(index, iframe){
+      $(iframe).attr("src", $(iframe).attr("src"));
+    });
+  });
+});
+</script>
+    
+   </body>
+     </html>
+
+    <!--Looking to publish this in GitHub? Here is what you need to do. Go back to GitHub, sign in and create a new repository. Click upload, and select/drag and drop all of you files... all of them, index.html. style.html, readme, and your image assets. Click commit. This will replace/add all essential files to make your Nature Outing. Great, now your files are where it needs to be. Now go to your repository "settings." Scroll down to "GitHub Pages." Here you will change "source" from "none" to "master branch." This will publish your Nature Study online. Refresh and scroll down to find your URL. Copy and Paste. It's time to spread your love of nature!-->
+    
+    
+    <!--Down here is where we keep all over our modal links. You will need to replace these placeholders with relevant content.-->    
+    
+    
+    <!-- Modal 1 -->
+  <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-lg">
+      <div class="modal-content">
+        <div class="close-modal" data-dismiss="modal">
+          <div class="lr">
+            <div class="rl"></div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-8 mx-auto">
+              <div class="modal-body">
+                <img class="img-responsive" src="BeeOnYellowFlower.jpg" style="width:100%" alt="Describe Image Here">
+                  
+                <button class="btn btn-primary" data-dismiss="modal" type="button">
+                  <i class="fas fa-times"></i>
+                  Close Project</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+      
+        <!-- Modal 2 -->
+  <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-lg">
+      <div class="modal-content">
+        <div class="close-modal" data-dismiss="modal">
+          <div class="lr">
+            <div class="rl"></div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-8 mx-auto">
+              <div class="modal-body">
+                <img class="img-responsive" src="MossPlants.jpg" style="width:100%" alt="Describe Image Here">
+                  
+                <button class="btn btn-primary" data-dismiss="modal" type="button">
+                  <i class="fas fa-times"></i>
+                  Close Project</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+      
+        <!-- Modal 3 -->
+  <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-lg">
+      <div class="modal-content">
+        <div class="close-modal" data-dismiss="modal">
+          <div class="lr">
+            <div class="rl"></div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-8 mx-auto">
+              <div class="modal-body">
+                <img class="img-responsive" src="BeeOnPurpleFlower.jpg" style="width:100%" alt="Describe Image Here">
+                  
+                <button class="btn btn-primary" data-dismiss="modal" type="button">
+                  <i class="fas fa-times"></i>
+                  Close Project</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+      
+        <!-- Modal 4 -->
+  <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-lg">
+      <div class="modal-content">
+        <div class="close-modal" data-dismiss="modal">
+          <div class="lr">
+            <div class="rl"></div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-8 mx-auto">
+              <div class="modal-body">
+                <img class="img-responsive" src="img4.jpg" style="width:100%" alt="Describe Image Here">
+                  
+                <button class="btn btn-primary" data-dismiss="modal" type="button">
+                  <i class="fas fa-times"></i>
+                  Close Project</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+      
+   
+      
+        <!-- Modal 5 -->
+  <div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-lg">
+      <div class="modal-content">
+        <div class="close-modal" data-dismiss="modal">
+          <div class="lr">
+            <div class="rl"></div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-8 mx-auto">
+              <div class="modal-body">
+                <img class="img-responsive" src="img5.jpg" style="width:100%" alt="Describe Image Here">
+                  
+                <button class="btn btn-primary" data-dismiss="modal" type="button">
+                  <i class="fas fa-times"></i>
+                  Close Project</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+      
+        <!-- Modal 6 -->
+  <div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-lg">
+      <div class="modal-content">
+        <div class="close-modal" data-dismiss="modal">
+          <div class="lr">
+            <div class="rl"></div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-8 mx-auto">
+              <div class="modal-body">
+                <img class="img-responsive" src="img6.jpg" style="width:100%" alt="Describe Image Here">
+                  
+                <button class="btn btn-primary" data-dismiss="modal" type="button">
+                  <i class="fas fa-times"></i>
+                  Close Project</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+      
+       
+
+
+ 
